@@ -1,9 +1,3 @@
-/*
-	Massively by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
-
 (function($) {
 
 	var	$window = $(window),
@@ -12,7 +6,16 @@
 		$header = $('#header'),
 		$nav = $('#nav'),
 		$main = $('#main'),
-		$navPanelToggle, $navPanel, $navPanelInner;
+		$navPanelToggle, $navPanel, $navPanelInner,
+		bg = ['i', 10],
+		loc = location.href;
+
+	if(loc.indexOf('botalab.html') > -1) {
+		bg = ['b', 6];
+	} else if(loc.indexOf('lifening.html') > -1) {
+		bg = ['l', 0];
+	}
+
 
 	// Breakpoints.
 		breakpoints({
@@ -52,13 +55,14 @@
 		$this.each(function() {
 
 			var $t = $(this),
-				$bg = $('<div class="bg"></div>').appendTo($t),
+				$bg = $('<div class="bg fixed"></div>').appendTo($t),
 				on, off;
 
 			on = function() {
 
 				$bg
-					.removeClass('fixed')
+					//.removeClass('fixed')
+					.addClass("bg"+ (Math.floor(Math.random() * bg[1])+1)+'_'+bg[0])
 					.css('transform', 'matrix(1,0,0,1,0,0)');
 
 				$window
@@ -75,7 +79,7 @@
 			off = function() {
 
 				$bg
-					.addClass('fixed')
+					.addClass("bg"+ (Math.floor(Math.random() * bg[1])+1)+'_'+bg[0])
 					.css('transform', 'none');
 
 				$window
@@ -225,11 +229,9 @@
 						top: '60vh',
 						bottom: '-120vh',
 						enter: function() {
-							console.log('enter');
 							$intro.addClass('hidden');
 						},
 						leave: function() {
-							console.log('leave');
 							$intro.removeClass('hidden');
 						}
 					});
