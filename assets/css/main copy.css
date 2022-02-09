@@ -126,12 +126,6 @@ input, select, textarea {
 			html {
 				font-size: 12pt;
 			}
-			img.howtouse {
-				display: inline-block;
-			}
-			img.howtouse_m {
-				display: none;
-			}
 
 		}
 
@@ -140,12 +134,7 @@ input, select, textarea {
 			html {
 				font-size: 11pt;
 			}
-			img.howtouse {
-				display: none;
-			}
-			img.howtouse_m {
-				display: inline-block;
-			}
+
 		}
 
 		@media screen and (max-width: 360px) {
@@ -153,12 +142,7 @@ input, select, textarea {
 			html {
 				font-size: 10pt;
 			}
-			img.howtouse {
-				display: none;
-			}
-			img.howtouse_m {
-				display: inline-block;
-			}
+
 		}
 
 	body {
@@ -3301,8 +3285,7 @@ input, select, textarea {
 
 	#intro {
 		color: #ffffff;
-		padding-top: 5rem;
-		height: 536px;
+		padding: 8rem 4rem 6rem 4rem ;
 		-moz-align-items: center;
 		-webkit-align-items: center;
 		-ms-align-items: center;
@@ -3467,28 +3450,10 @@ input, select, textarea {
 				opacity: 0;
 			}
 
-		@media screen and (max-width: 1680px) {
-
-			#intro {
-				height: 288px;
-				min-height: 288px;
-				max-height: 288px;
-			}
-		}
-
-		@media screen and (max-width: 1280px) {
-
-			#intro {
-				height: 226px;
-				min-height: 226px;
-				max-height: 226px;
-			}
-		}
-
 		@media screen and (max-width: 980px) {
 
 			#intro {
-				height: 400px;
+				padding: 4rem 4rem 2rem 4rem ;
 				min-height: 90vh;
 			}
 
