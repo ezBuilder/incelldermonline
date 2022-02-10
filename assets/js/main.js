@@ -6,6 +6,7 @@
 		$header = $('#header'),
 		$nav = $('#nav'),
 		$main = $('#main'),
+		$top = $('#top'),
 		$navPanelToggle, $navPanel, $navPanelInner,
 		bg = ['i', 10],
 		loc = location.href;
@@ -16,6 +17,10 @@
 		bg = ['l', 0];
 	}
 
+	$top.on('click', function() {
+		$("html, body").animate({ scrollTop: 0 }, "slow");
+		return false;
+	});
 
 	// Breakpoints.
 		breakpoints({
@@ -118,6 +123,7 @@
 		$window.on('load', function() {
 			window.setTimeout(function() {
 				$body.removeClass('is-preload');
+				$("html, body").animate({ scrollTop: 0 }, "slow");
 			}, 100);
 		});
 
@@ -140,9 +146,11 @@
 				bottom: '200px',
 				enter: function() {
 					$navPanelToggle.removeClass('alt');
+					$top.removeClass('show');
 				},
 				leave: function() {
 					$navPanelToggle.addClass('alt');
+					$top.addClass('show');
 				}
 			});
 

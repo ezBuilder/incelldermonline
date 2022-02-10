@@ -2871,7 +2871,7 @@ input, select, textarea {
 			-webkit-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 			-ms-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 			transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
-			font-size: 1rem;
+			font-size: 1.25rem;
 		}
 
 /* List */
@@ -4024,8 +4024,7 @@ input, select, textarea {
 
 		}
 
-/* Main */
-
+	/* Main */
 	#main {
 		border-radius: 0 0 20px 20px;
 		background-color: #ffffff;
@@ -4226,6 +4225,405 @@ input, select, textarea {
 
 		}
 
+			#main {
+		border-radius: 0 0 20px 20px;
+		background-color: #ffffff;
+		position: relative;
+		margin: 0 auto;
+		width: calc(100% - 4rem);
+		max-width: 72rem;
+		z-index: 2;
+	}
+	@media screen and (max-width: 980px) {
+		#main {
+			width: 100%;
+		}
+	}
+
+		#main > * {
+			padding: 4rem 4rem 2rem 4rem ;
+			border-top: solid 2px #eeeeee;
+			margin: 0;
+		}
+
+			#main > *:first-child {
+				border-top: 0;
+			}
+
+		#main > footer {
+			text-align: center;
+		}
+
+		#main > .post {
+			padding: 8rem 8rem 6rem 8rem ;
+		}
+
+			#main > .post header.major > .date {
+				margin-top: -2rem;
+			}
+
+			#main > .post header.major > h1, #main > .post header.major h2 {
+				font-size: 4rem;
+				line-height: 1.1;
+				margin: 0 0 2rem 0;
+			}
+
+			#main > .post.featured {
+				text-align: center;
+			}
+
+			@media screen and (max-width: 1280px) {
+
+				#main > .post {
+					padding: 6rem 4rem 4rem 4rem ;
+				}
+
+			}
+
+			@media screen and (max-width: 736px) {
+
+				#main > .post {
+					padding: 4rem 2rem 2rem 2rem ;
+				}
+
+					#main > .post header.major > .date {
+						margin-top: -1rem;
+						margin-bottom: 2rem;
+					}
+
+					#main > .post header.major > h1, #main > .post header.major h2 {
+						font-size: 2.5rem;
+						line-height: 1.2;
+						margin: 0 0 1.5rem 0;
+					}
+
+			}
+
+		#main > .posts {
+			display: -moz-flex;
+			display: -webkit-flex;
+			display: -ms-flex;
+			display: flex;
+			-moz-flex-wrap: wrap;
+			-webkit-flex-wrap: wrap;
+			-ms-flex-wrap: wrap;
+			flex-wrap: wrap;
+			-moz-align-items: -moz-stretch;
+			-webkit-align-items: -webkit-stretch;
+			-ms-align-items: -ms-stretch;
+			align-items: stretch;
+			text-align: center;
+			width: 100%;
+			padding: 0;
+		}
+
+			#main > .posts > * {
+				-moz-flex-shrink: 1;
+				-webkit-flex-shrink: 1;
+				-ms-flex-shrink: 1;
+				flex-shrink: 1;
+				-moz-flex-grow: 0;
+				-webkit-flex-grow: 0;
+				-ms-flex-grow: 0;
+				flex-grow: 0;
+			}
+
+			#main > .posts > * {
+				width: 50%;
+			}
+
+			#main > .posts > * {
+				padding: 4rem;
+				width: 50%;
+			}
+
+			#main > .posts > article {
+				border-color: #eeeeee;
+				border-left-width: 2px;
+				border-style: solid;
+				border-top-width: 2px;
+				text-align: center;
+			}
+
+			#main > .posts > article > p {
+				height: 114px !important;
+			}
+
+				#main > .posts > article > :last-child {
+					margin-bottom: 0;
+				}
+
+				#main > .posts > article:nth-child(2n - 1) {
+					border-left-width: 0;
+				}
+
+				#main > .posts > article:nth-child(-n + 2) {
+					border-top-width: 0;
+				}
+
+			@media screen and (max-width: 980px) {
+
+				#main > .posts > * {
+					width: 50%;
+				}
+
+				#main > .posts > * {
+					padding: 2.5rem;
+					width: 50%;
+				}
+
+			}
+
+			@media screen and (max-width: 736px) {
+
+				#main > .posts > * {
+					width: 100%;
+				}
+
+				#main > .posts > * {
+					padding: 2rem;
+					width: 100%;
+				}
+
+				#main > .posts > article:nth-child(2n - 1) {
+					border-left-width: 2px;
+				}
+
+				#main > .posts > article:nth-child(-n + 2) {
+					border-top-width: 2px;
+				}
+
+				#main > .posts > article:nth-child(n) {
+					border-left-width: 0;
+				}
+
+				#main > .posts > article:nth-child(-n + 1) {
+					border-top-width: 0;
+				}
+
+				#main > .posts > article .image {
+					max-width: 25rem;
+					margin-left: auto;
+					margin-right: auto;
+				}
+
+			}
+
+		@media screen and (max-width: 736px) {
+
+			#main > * {
+				padding: 2rem 2rem 0.1rem 2rem ;
+			}
+
+		}
+
+		@media screen and (max-width: 480px) {
+
+			#main {
+				width: 100%;
+			}
+
+		}
+
+		#free {
+			border-radius: 0 0 20px 20px;
+			background-color: #ffffff;
+			position: relative;
+			margin: 0 auto;
+			width: calc(100% - 4rem);
+			max-width: 72rem;
+			z-index: 2;
+		}
+		@media screen and (max-width: 980px) {
+			#free {
+				width: 100%;
+			}
+		}
+	
+			#free > * {
+				padding: 4rem 4rem 2rem 4rem ;
+				border-top: solid 2px #eeeeee;
+				margin: 0;
+			}
+	
+				#free > *:first-child {
+					border-top: 0;
+				}
+	
+			#free > footer {
+				text-align: center;
+			}
+	
+			#free > .post {
+				padding: 8rem 8rem 6rem 8rem ;
+			}
+	
+				#free > .post header.major > .date {
+					margin-top: -2rem;
+				}
+	
+				#free > .post header.major > h1, #free > .post header.major h2 {
+					font-size: 4rem;
+					line-height: 1.1;
+					margin: 0 0 2rem 0;
+				}
+	
+				#free > .post.featured {
+					text-align: center;
+				}
+	
+				@media screen and (max-width: 1280px) {
+	
+					#free > .post {
+						padding: 6rem 4rem 4rem 4rem ;
+					}
+	
+				}
+	
+				@media screen and (max-width: 736px) {
+	
+					#free > .post {
+						padding: 4rem 2rem 2rem 2rem ;
+					}
+	
+						#free > .post header.major > .date {
+							margin-top: -1rem;
+							margin-bottom: 2rem;
+						}
+	
+						#free > .post header.major > h1, #free > .post header.major h2 {
+							font-size: 2.5rem;
+							line-height: 1.2;
+							margin: 0 0 1.5rem 0;
+						}
+	
+				}
+	
+			#free > .posts {
+				display: -moz-flex;
+				display: -webkit-flex;
+				display: -ms-flex;
+				display: flex;
+				-moz-flex-wrap: wrap;
+				-webkit-flex-wrap: wrap;
+				-ms-flex-wrap: wrap;
+				flex-wrap: wrap;
+				-moz-align-items: -moz-stretch;
+				-webkit-align-items: -webkit-stretch;
+				-ms-align-items: -ms-stretch;
+				align-items: stretch;
+				text-align: center;
+				width: 100%;
+				padding: 0;
+			}
+	
+				#free > .posts > * {
+					-moz-flex-shrink: 1;
+					-webkit-flex-shrink: 1;
+					-ms-flex-shrink: 1;
+					flex-shrink: 1;
+					-moz-flex-grow: 0;
+					-webkit-flex-grow: 0;
+					-ms-flex-grow: 0;
+					flex-grow: 0;
+				}
+	
+				#free > .posts > * {
+					padding: 1rem;
+					width: 25%;
+				}
+	
+				#free > .posts > article {
+					border-color: #eeeeee;
+					border-left-width: 2px;
+					border-style: solid;
+					border-top-width: 2px;
+					text-align: center;
+				}
+	
+				#free > .posts > article > p {
+					text-align: center;
+				}
+				#free > .posts > article > .prod-img {
+					width: 100%;
+					max-width: 260px;
+				}
+	
+					#free > .posts > article > :last-child {
+						margin-bottom: 0;
+					}
+	
+/* 					#free > .posts > article:nth-child(2n - 1) {
+						border-left-width: 0;
+					}
+	
+					#free > .posts > article:nth-child(-n + 2) {
+						border-top-width: 0;
+					} */
+	
+				@media screen and (max-width: 980px) {
+	
+					#free > .posts > * {
+						width: 50%;
+					}
+	
+					#free > .posts > * {
+						padding: 2.5rem;
+						width: 50%;
+					}
+	
+				}
+	
+				@media screen and (max-width: 736px) {
+	
+					#free > .posts > * {
+						width: 100%;
+					}
+	
+					#free > .posts > * {
+						padding: 2rem;
+						width: 100%;
+					}
+	
+					#free > .posts > article:nth-child(2n - 1) {
+						border-left-width: 2px;
+					}
+	
+					#free > .posts > article:nth-child(-n + 2) {
+						border-top-width: 2px;
+					}
+	
+					#free > .posts > article:nth-child(n) {
+						border-left-width: 0;
+					}
+	
+					#free > .posts > article:nth-child(-n + 1) {
+						border-top-width: 0;
+					}
+	
+					#free > .posts > article .image {
+						max-width: 25rem;
+						margin-left: auto;
+						margin-right: auto;
+					}
+	
+				}
+	
+			@media screen and (max-width: 736px) {
+	
+				#free > * {
+					padding: 2rem 2rem 0.1rem 2rem ;
+				}
+	
+			}
+	
+			@media screen and (max-width: 480px) {
+	
+				#free {
+					width: 100%;
+				}
+	
+			}
 /* Footer */
 
 	#footer {
@@ -4799,6 +5197,27 @@ input, select, textarea {
 		#navPanelToggle:before {
 			content: '\f0c9';
 			margin-right: 0.5rem;
+		}
+
+		.top {
+			position: fixed;
+			right: 10px;
+			bottom: 30px;
+			z-index: 10;
+			border-radius: 100px;
+			width: 30px;
+			height: 30px;
+			font-size: 20px;
+			border: none;
+			line-height: 24px;
+			text-align: center;
+			background-color: #fff;
+			box-shadow: 0 0.125rem 0.75rem 0 rgba(30, 37, 45, 0.25);
+			color: #666;
+			display: none;
+		}
+		.top.show {
+			display: inline-block;
 		}
 
 		#navPanelToggle.alt {
