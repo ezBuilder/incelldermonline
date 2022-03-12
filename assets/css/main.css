@@ -3759,7 +3759,7 @@ input, select, textarea {
 					margin-top: -70rem;
 				}
 		}
-	}
+	
 
 /* Header */
 
@@ -3885,7 +3885,7 @@ input, select, textarea {
 		-webkit-transition: -webkit-transform 1s ease, opacity 1s ease;
 		-ms-transition: -ms-transform 1s ease, opacity 1s ease;
 		transition: transform 1s ease, opacity 1s ease;
-		background: #b68f6652
+		background: #b68f6652;
 		height: 4rem;
 		line-height: 4rem;
 		margin: -4rem auto 0 auto;
