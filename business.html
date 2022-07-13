@@ -102,6 +102,38 @@
     <link rel="manifest" href="manifest.json" />
     <link rel="stylesheet" href="assets/css/main.css?v=2022042901" />
     <link rel="canonical" href="https://incellderm.online/index.html" />
+    <style>
+      .business-contact {
+        background-position: top center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        min-height: 760px;
+        max-height: 760px;
+        width: 100%;
+        min-width: 250px;
+        background-image: url("images/business-contact.png");
+        background-color: #fff1e8;
+        text-align: center;
+      }
+      @media only screen and (max-width: 1280px) {
+        .business-contact {
+          min-height: 580px;
+        }
+      }
+      @media only screen and (max-width: 800px) {
+        .business-contact {
+          min-height: 480px;
+        }
+      }
+      @media only screen and (max-width: 600px) {
+        .business-contact {
+          min-height: 500px;
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-image: url("images/business-contact_m.png");
+        }
+      }
+    </style>
     <noscript
       ><link rel="stylesheet" href="assets/css/noscript.css"
     /></noscript>
@@ -158,12 +190,12 @@
         </ul>
       </nav>
       <div id="main">
-        <section>
-          <article>
-            <img
-              src="images/business-contact.png"
+        <section style="padding: 0">
+          <article class="business-contact">
+            <!-- <img
+              src="images/business-contact_m.png"
               style="max-width: 1377px; width: 100%; min-width: 250px"
-            />
+            /> -->
           </article>
         </section>
       </div>
