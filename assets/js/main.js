@@ -15,7 +15,7 @@
   if (loc.indexOf("botalab.html") > -1) {
     bg = ["b", 6];
   } else if (loc.indexOf("lifening.html") > -1) {
-    bg = ["l", 0];
+    bg = ["l", 1];
   }
 
   $top.on("click", function () {
